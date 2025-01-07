@@ -1,0 +1,61 @@
+Data Types:
+1) Dynamic type
+two types
+1)primitive data type:
+2)non-primitive typess:(objects,Arrays)
+To check the data type - typeOf
+1)Primtive data type: predefined ; we can store single values
+1>Numbers: integers,floats
+2>String: Stream of characters enclosed in quotes
+--Single, double , backtick quotes;
+3>Boolean: True or False 
+4>Null: empty value or no value
+5>Undefined: ----declared variable with no value
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = "sai";
+        let b =" kumar";
+        console.log(`react.js student = ${a+" "+b}`);
+        document.write(`react.js student = ${a+" "+b}`)
+let a =1
+        console.log("hi+a+a");
+        document.write('hi+a+a',"<br>")
+        document.write(`hi+${a+a}`)
+        console.log(`hi+${a+a}`)
+
+    </script>
+</body>
+null
+</html>
+null & undefined
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let a = null
+        //document.write(a);
+        //document.write(typeof(a));
+        let c = undefined
+        document.write(c);
+        document.write(typeof(c));
+// let a = "sai"
+        l//et b = "cha"
+        //let age =  30
+        //console.log(`I am ${a+" "+b} my age is ${age} years old`);
+        //document.write(`I am ${a+" "+b} my age is ${age} years old`)
+
+    </script>
+</body>
+</html>
