@@ -1,0 +1,64 @@
+Arithmetic Operators:
+Addition
+Subtraction
+Multiplication
+Modulus
+Division
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 15
+        let b = 5
+        a++
+        b--
+        document.write(b,"<br>")
+        document.write(a,"<br>")
+        document.write(a*b,"<br>")
+        document.write(a**b,"<br>");
+        document.write(a/b,"<br>")
+        document.write(a%b,"<br>")
+    </script>
+</body>
+</html>
+Logical operators:
+ <script>
+        let a = 10
+        let b= 2
+        document.write(a>b && a>12,"<br>")
+        document.write(a<b && a<12,"<br>")
+        document.write(a>b || a>12,"<br>")
+        document.write(!(a<12),"<br>")
+</script>
+relational operators:
+ <script>
+        let a = 10
+        let b= "10"
+        document.write(a==b ,"<br>")
+        document.write(a!=b,"<br>")
+        document.write(a===b ,"<br>")
+        document.write(a!==b,"<br>")
+        document.write(a>=b,"<br>")
+        document.write(a<=b,"<br>")
+
+    </script>
+Conditional
+<script>
+       let t = 50
+       let r =(t>40)?'ac-off':'ac-on' 
+       document.write(r,"<br>")
+    </script>
+let a1=prompt()
+      document.write(a1)
+      document.write(typeof(a1))
+      let a2 = prompt()
+      document.write(a1+a2,"<br>")
+
+
+
+
