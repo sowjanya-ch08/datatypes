@@ -1,0 +1,45 @@
+EXAMPLE1:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("enter a number"))
+        if(number %3==0 && number %2==0){
+            document.write("the number is divisible both by 2 & 3")
+
+        }else{
+            document.write("the number is divisible not divisible by 2 & 3")
+        }
+    </script>
+</body>
+EXAMPLE 2:
+</html>
+ // let num1 = parseInt(prompt( "enter first number"))
+        //let num2 = parseInt(prompt("enter second number"))
+        //let num3  = parseInt(prompt("enter third number")) 
+        //if(num1>num2&& num1>num3){
+          //  document.write(`${num1} is greater than num3 and num2`)
+
+        //}else if (num2>num1 && num2>num3){
+          //  document.write(`${num2} is greater than num1 and num3`)
+        //}else {
+          //  document.write(`${num3} is greater than num1 and num2`)
+        //}
+
+    Example : 3
+    let a=parseInt(prompt("Enter the total number of working days: "))
+        let b=parseInt(prompt("Enter the number of days you were absent: "))
+        let c=a-b
+        let d=(c/a)*100
+        if(d<75){
+            document.write("You are not eligible to write the exam as your attendance percentage is "+d+"%")
+        }else{
+            document.write("You are eligible to write the exam as your attendance percentage is "+d+"%")
+        }
+        
+
