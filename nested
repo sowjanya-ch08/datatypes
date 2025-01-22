@@ -1,0 +1,50 @@
+
+<script>
+        for(let i=1;i<=8 ;i= i+1 ) { 
+            if(i==5){
+                continue;
+    
+            }console.log(i)
+    
+           }
+    
+     
+    </script>
+
+Nested Loops:
+A loop inside the another loop
+The inner loop will execute one time for each iteration of outer loop.
+An inner loop within the repeating block of outer loop
+
+<!-- <script>
+        for(let i=1;i<=8 ;i= i+2 ) { 
+            if(i>5){
+                continue;
+    
+            }console.log(i)
+    
+           }
+    
+        
+    </script> -->
+        
+    <!-- <script>
+            for(let i=1;i<=5;i++){
+                for(let j=1;j<=i;j++){
+                    document.write("* ")
+                }
+                document.write("<br>") 
+            }
+        </script> -->
+        <script>
+            let n=5;
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let j=1;j<=2*i-1;j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        </script>
