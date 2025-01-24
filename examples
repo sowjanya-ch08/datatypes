@@ -1,0 +1,134 @@
+
+Arrow Function:
+Es6 version
+More readable and more structure
+Anonymous functions (lambda functions)
+Without function name but they are assigned to a variable
+
+<!-- <script>
+            sum = function(n1 , n2){
+                let r = n1+n2
+                return r
+            }
+            console.log(sum(8,9))
+        </script> -->
+         <!-- <script>
+            let c=()=>{
+                console.log("hi")
+
+            }
+            c() 
+        </script> -->
+        <script>
+            let x =(x,y)=>{
+                console.log(x+y)
+            }
+            x(20,30)
+            x(40,50)
+        </script>
+Arrow function with one argument
+Without using paranthesis
+<script>
+            let greet = x=> console.log(x);
+            greet('hello')
+        </script>
+</body>  
+Example: Arrow functions as an expression
+<script>
+            let age = 18;
+            let  welcome = (age<18) ?
+            ()=>console.log('hello'):
+            ()=>console.log('hi');
+            welcome()
+        </script>
+Synchronous functions:
+
+<script>
+            function task1(){
+                console.log("Task1: start1")
+              }
+              
+              function task2(){
+                console.log("Task2: start2")
+              }
+              
+              function task3(){
+                console.log("Task3: start3")
+              }
+              
+              task1()
+              task2()
+              task3()
+        </script>
+</body>  
+Asynchronous Function
+Multiple tasks at a time
+
+<script>
+            console.log("hi nishu");
+            setTimeout(() =>{
+                console.log("Hi, I am waiting")
+            },2000  );
+            console.log("I am in lab")
+        </script>
+
+
+JavaScript callbacks:
+A call back function is a function that is passed argument to another function;
+
+<script>
+            function greet(name,callback){
+                console.log('Hello,${name}!')
+            }
+            function sayGoodbye() {
+                console.log("Goodbye")
+            }
+        </script>
+</body>  
+
+
+<script>
+            function greet(name,callback){
+                console.log(`Hello,${name}!`)
+                callback();
+            }
+            function sayGoodbye() {
+                console.log("Goodbye")
+            }
+            greet("sanju", sayGoodbye)
+        </script>
+
+Promise:
+Three states
+1.Pending : --still not completed –continuing
+2.Fulfilled ==task completed
+3.Rejected == the operation is failed
+
+Example:
+Let myPromise = new promise
+
+
+#functions
+#oops
+#file handling
+#multithreading
+# exception handling
+#json
+
+
+<script>
+            let mypromise=new Promise((resolve,reject)=>
+  {
+    let success=true;
+    if(success){
+      resolve("task completed");
+      }else{
+        reject("task failed");
+      }
+  })
+  mypromise.then((message)=>
+  {
+    console.log(message);
+    })
+
+        </script>
