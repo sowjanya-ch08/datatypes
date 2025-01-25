@@ -1,0 +1,83 @@
+25-1-25
+Call back:
+You can pass the callback function as an argument to pass the 
+Execution:
+The function receiving 
+mainfunction takes a parameter as callback
+callbackFunction  is passed as an argument to mainfunction
+inside the mainfunction, the callback function 
+
+Output:
+mainfunction(callbackFunction);
+It will print it as ("Executing main function")
+ Then it reaches to callback() ;where it call the function which is passed to mainfunction(callbackfunction)
+
+Example:2
+Passing a named function as a callback;
+ <script>l
+            function greet(name,callback) {
+                console.log("hello" +name);
+                callback();
+            }
+            function goodbye(){
+                console.log("Goodbye!")
+            }
+            greet("pavani",goodbye);
+        </script>
+
+Example 3:
+Using an anonymous function as a call back
+
+!-- <script>
+            function greet(name,callback) {
+                console.log("hello" +name);
+                callback();
+            }
+            greet("pavani",function() {
+                console.log("goodbye!")
+                
+            }); 
+        </script> -->
+
+Example 4:
+Using anonymous
+ 
+        <script>
+            function fetchData(callback){
+                console.log("Fetching data...")
+                setTimeout(function() {
+                    console.log("Data fetched");
+                    callback();
+                },2000);
+            }
+    function processData() {
+                console.log("processing the fetch data...")
+            }
+            fetchData(processData);
+
+            
+        </script>
+Example 5:
+Using a callback with array methods(map)
+ <script>
+            const numbers =[1,2,3,4,5]
+            const d = numbers.map(function(num){
+                return num*2
+            } )
+            console.log(d)
+        </script>
+map() is a built in array ,method that callback function to process each item in array
+user registration scenario based;
+<script>
+      function registeruser(username, email, callback) {
+        console.log("registering user" + username);
+        setTimeout(function () {
+          console.log("user" + username + "registered succesfully");
+          callback(email);
+        }, 2000);
+      }
+      function sendWelcomeEmail(email) {
+        console.log("sending welcome email to" + email);
+      }
+      registeruser("Harshith", "harshith123@gmail.com,sendWelcomeEmail");
+    </script>
