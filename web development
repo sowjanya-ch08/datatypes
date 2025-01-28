@@ -1,0 +1,94 @@
+28-1-2-025
+
+--It is used in web development used to interact and manipulate(change) the html documents
+
+When the webpage loaded, the browser created DOM of the webpage
+
+When the html file is loaded into the browser, the java script cannot understand the html document directly
+
+DOM: It is basically the representation of the same html document but in a tree-like structure composed of object.
+
+
+
+Key points:
+1)	Structure: the DOM represents the structure of HTML document as a tree. Each node in tree represents the elements, an attribute or text
+2)	Manipulation: using js, you can interact with elements (buttons, paragraphs) on the webpage, changing the content, styles, can add or remove elements
+3)	 Event handling: you can handle the interactions, like click or pressing the button
+ 
+4)	W3C world wide web consortium
+
+DOM:
+--document is the entry point of DOM
+
+DOM Tree 
+
+<!DOCTYPE html>
+<head>
+    <title>MRUH</title>
+</head>
+<body>
+    <h1>Engineering</h1>
+</body>
+</html>
+
+Methods of Document objects:
+--used to interact with and manipulate the document getting element:
+1) getting an element by id:
+2)getting an element by class
+3)getting an element by tag:
+4)getting an element by query selector:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+   
+    <head>
+        <style>
+          
+      
+          .a{
+              color:rebeccapurple
+          }
+          .b{
+              color:rgb(42, 165, 101)
+          }
+        </style>
+      
+      </head>
+      <body>
+          <h1 class="a">vaishu</h1>
+          <h1 class="b">ramya</h1>
+          <h1 class="a">sonu</h1>
+          <h1 class="b">ravi</h1>
+      </body>
+      </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+   
+    <head>
+        <style>
+          
+      
+          .a{
+              color:rebeccapurple
+          }
+          .b{
+              color:rgb(42, 165, 101)
+          }
+        </style>
+      
+      </head>
+      <body>
+          <h1 id="a">vaishu</h1>
+          <h1 id="b">ramya</h1>
+          <h1 id="a">sonu</h1>
+          <h1 id="b">ravi</h1>
+
+          let x=<document class="get">id</document>
+      </body>
+      </html>
