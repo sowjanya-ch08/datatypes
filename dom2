@@ -1,0 +1,63 @@
+<div>
+        <div id="a">
+            <h1>sowjanya</h1>
+            
+             </div>
+             <div id="b">
+              <h2>sai</h2>
+              <h2>pardhu</h2>
+               </div>
+               <script>
+                let n=document.createElement("h2")
+                n.textContent="tagore"
+                let p=document.getElementById("a")
+                let l=document.getElementById("r")
+                p.insertBefore(n,l);
+                console.log(p)
+                
+               </script>
+    </div>
+  <div id="a">
+            <h1 s="">sowjanya</h1>
+            <h1>ravi</h1>
+            <h1 r="" >ram</h1>
+             </div>
+             <div id="b">
+              <h2>sam</h2>
+              <h2>venkat</h2>
+               </div>
+               <script>
+                let n=document.createElement("h2")
+                n.textContent="rahul"
+                let p=document.getElementById("a")
+                let l=document.getElementById("r")
+                let s=document.getElementById("s")
+                p.insertBefore(n,l);
+                console.log(p)
+                
+               </script>
+    </div> -->
+    <div id="a">
+        <h1 id="s">sowjanya</h1>
+        
+    </div>
+    <div id="b">
+        <h2>sai</h2>
+        <h2 id="t">sanju</h2>
+    </div>
+    <script>
+        let n = document.createElement("h4");
+        n.textContent = "padma";
+        let p = document.getElementById("a");
+        let l = document.getElementById("r");
+        p.insertBefore(n, l);
+        console.log(p);
+    
+        let m = document.createElement("h4");
+        m.textContent = "naresh";
+        let q = document.getElementById("a");  
+        let s = document.getElementById("t");  
+        q.insertBefore(m, s);  
+        console.log(q);
+    </script>
+
