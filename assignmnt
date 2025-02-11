@@ -1,0 +1,53 @@
+import React from 'react';
+
+const Ternary = ()=> {
+  const isLoggedIn = true;
+  return (
+    <div>
+      
+      {isLoggedIn ? <h1>Welcome, back! Thirmal</h1> : <h3>Please log in</h3>}
+    </div>
+  );
+}
+
+export default Ternary;
+import React from 'react';
+import './App.css';
+//import Welcome1 from './components/welcome1';
+//import Greeting from './components/greet';
+//import FruitsList from './components/fruits';
+//import Counter from './components/count';
+//import ThemeToggler from './components/toggle';
+//import Ternary from './components/Ternary';
+import Welcome1 from './components/welcome1';
+function App() {
+
+  return (
+    <div>
+   <Welcome1 name="sowjanya" greeting="Welocome to MRU" />
+   <Welcome1 name="Raj" greeting="Welocome to MRU" />
+   <Welcome1 name="Pardhu" greeting="Welocome to MRU" />
+   <Welcome1 name="sai" greeting="Welocome to MRU" />
+   <Welcome1 name="pradeep" greeting="Welocome to MRU" />
+    </div>
+    
+  );
+};
+export default App;
+
+
+
+import React from 'react';
+
+const Welcome1=(props)=>{
+    const{name, greeting}=props;
+
+    return(
+        <div>
+  <h1 className="message">{name},{greeting}</h1>
+        <img src="https://universitykart.b-cdn.net/Content/upload/admin/no4uagch.g3g.png"/>
+      </div>
+       
+    )
+}
+export default Welcome1;
