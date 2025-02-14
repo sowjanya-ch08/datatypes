@@ -1,0 +1,84 @@
+14-02-2024
+
+React Reducer();
+A Reducer is a function that helps to update (like score ,a list)
+based on action we take 
+--1)current State : The current value of a state 
+2) Action:
+3) Example:
+Action : add or remove an item
+State: inital value (3 items) #
+-- Tracking apples:
+import React ,{useReducer}from 'react';
+function appleReducer(state=3,action){
+  switch(action.type){
+    case 'ADD_APPLE':
+      return state+1;
+
+case 'REMOVE_APPLE':
+      return state-1;
+
+      default:
+        return state;
+  }
+}
+
+function App(){
+  const[state,dispatch]=useReducer(appleReducer,3)
+  return(
+    <div>
+      <h1>
+        APPPLE Counter
+      </h1>
+      <p> Number of APPPLES: {state}</p>
+      <button onClick={()=>dispatch({type: 'ADD_APPLE'})} > ADD APPLE</button>
+      <button onClick={()=>dispatch({type: 'REMOVE_APPLE'})} >REMOVE APPLE </button>
+    </div>
+  )
+}
+export default App;
+--call back in react
+-- in react , a call back is function that is passed as an argument
+to another function
+--call backs are often to communicate with different components
+ex: A parent component passing as  a callback to a child 
+--parent component displays a message; and child components
+has a button
+when the button is clicked , the child will use call back 
+and tells the parent component to update the msg
+import React, { useState } from 'react';
+import Child from './Child';
+
+const Parent = () => {
+  const [message, setMessage] = useState('hello world');
+
+  const changeMessage = () => {
+    setMessage('New message from Parent');
+  };
+
+  return (
+    <div>
+      <h1>{message}</h1>
+      {/* Passing the changeMessage function as a prop to the Child component */}
+      <Child changeMessage={changeMessage} />
+    </div>
+  );
+};
+
+export default Parent;
+
+
+import React from 'react';
+
+const Child = ({ changeMessage }) => {
+  return (
+    <div>
+      <button onClick={changeMessage}>Change Message</button>
+    </div>
+  );
+};
+
+export default Child;
+
+
+
