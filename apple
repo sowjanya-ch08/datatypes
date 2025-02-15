@@ -1,0 +1,145 @@
+useRef:
+
+use State:--change the state; React will render the component and update the ui with the new element
+
+
+useRef: changing the value by using useRed doesnot re-render;
+stays the same even the value is updated
+
+use ref : when you change the value stored in ref.current.
+it doesnot make the component render
+this is useful when you need to store values or interact with Dom elements with out extra renders
+
+commonly used:
+1) Accessing a Dom element : like scrolling to screen 
+focusing the input 
+# login from search zoom updated 
+2)storing values : keep track of values that don't need to update 
+the UI but need to remembered the previous state
+// import React, { useReducer } from "react";
+// import "./App.css"; // Import CSS file
+
+// // Reducer function to manage apples
+// function appleReducer(state, action) {
+//   switch (action.type) {
+//     case "ADD_APPLE":
+//       return [...state, "🍏"];
+//     case "EAT_APPLE":
+//       return state.length > 0 ? state.slice(0, -1) : state; // Prevent negative apples
+//     default:
+//       return state;
+//   }
+// }
+
+// function App() {
+//   const [apples, dispatch] = useReducer(appleReducer, ["🍏", "🍏", "🍏"]);
+
+//   return (
+//     <div className="container">
+//       <h1>🍏 Apple Counter 🍏</h1>
+//       <p className="count">Number of apples: {apples.length}</p>
+
+//       {/* Apple image display */}
+//       <div className="apple-container">
+//         {apples.map((_, index) => (
+//           <img key={index} src="/apple.jpg" alt="Apple" className="apple" />
+//         ))}
+//       </div>
+
+//       <div className="buttons">
+//         <button className="add" onClick={() => dispatch({ type: "ADD_APPLE" })}>
+//           ADD APPLE
+//         </button>
+//         <button
+//           className="eat"
+//           onClick={() => dispatch({ type: "EAT_APPLE" })}
+//           disabled={apples.length === 0}
+//         >
+//           EAT APPLE
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+
+h1 {
+  color: #4caf50;
+}
+
+.count {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.apple-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.apple {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apple:hover {
+  transform: scale(1.2);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.add {
+  background-color: green;
+}
+
+.eat {
+  background-color: red;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
